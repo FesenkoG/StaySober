@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		00C3CE612B80F9AA00981A02 /* QuitDrinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CE602B80F9AA00981A02 /* QuitDrinkApp.swift */; };
-		00C3CE632B80F9AA00981A02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CE622B80F9AA00981A02 /* ContentView.swift */; };
+		00C3CE632B80F9AA00981A02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CE622B80F9AA00981A02 /* MainView.swift */; };
 		00C3CE652B80F9AB00981A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C3CE642B80F9AB00981A02 /* Assets.xcassets */; };
 		00C3CE682B80F9AB00981A02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C3CE672B80F9AB00981A02 /* Preview Assets.xcassets */; };
+		00C3CE702B87DC4700981A02 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 00C3CE722B87DC4700981A02 /* Localizable.stringsdict */; };
+		00C3CE782B87DD6100981A02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C3CE7A2B87DD6100981A02 /* Localizable.strings */; };
+		00C3CE7E2B88A1FB00981A02 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CE7D2B88A1FB00981A02 /* DatePickerView.swift */; };
+		00C3CE812B88A2E400981A02 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CE802B88A2E400981A02 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00C3CE5D2B80F9AA00981A02 /* QuitDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuitDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C3CE602B80F9AA00981A02 /* QuitDrinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitDrinkApp.swift; sourceTree = "<group>"; };
-		00C3CE622B80F9AA00981A02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00C3CE622B80F9AA00981A02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		00C3CE642B80F9AB00981A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C3CE672B80F9AB00981A02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00C3CE712B87DC4700981A02 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		00C3CE732B87DC4B00981A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		00C3CE792B87DD6100981A02 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00C3CE7B2B87DD6300981A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00C3CE7D2B88A1FB00981A02 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		00C3CE802B88A2E400981A02 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		00C3CE5F2B80F9AA00981A02 /* QuitDrink */ = {
 			isa = PBXGroup;
 			children = (
+				00C3CE7C2B88A17600981A02 /* Views */,
+				00C3CE742B87DCD100981A02 /* Resources */,
 				00C3CE602B80F9AA00981A02 /* QuitDrinkApp.swift */,
-				00C3CE622B80F9AA00981A02 /* ContentView.swift */,
 				00C3CE642B80F9AB00981A02 /* Assets.xcassets */,
 				00C3CE662B80F9AB00981A02 /* Preview Content */,
 			);
@@ -65,6 +76,49 @@
 				00C3CE672B80F9AB00981A02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00C3CE742B87DCD100981A02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00C3CE752B87DCD900981A02 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00C3CE752B87DCD900981A02 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				00C3CE722B87DC4700981A02 /* Localizable.stringsdict */,
+				00C3CE7A2B87DD6100981A02 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		00C3CE7C2B88A17600981A02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00C3CE822B88A6F500981A02 /* MainView */,
+				00C3CE7F2B88A2D200981A02 /* Common */,
+				00C3CE7D2B88A1FB00981A02 /* DatePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00C3CE7F2B88A2D200981A02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00C3CE802B88A2E400981A02 /* RoundedButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00C3CE822B88A6F500981A02 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				00C3CE622B80F9AA00981A02 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,11 +158,12 @@
 			};
 			buildConfigurationList = 00C3CE582B80F9AA00981A02 /* Build configuration list for PBXProject "QuitDrink" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 00C3CE542B80F9AA00981A02;
 			productRefGroup = 00C3CE5E2B80F9AA00981A02 /* Products */;
@@ -126,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C3CE682B80F9AB00981A02 /* Preview Assets.xcassets in Resources */,
+				00C3CE782B87DD6100981A02 /* Localizable.strings in Resources */,
 				00C3CE652B80F9AB00981A02 /* Assets.xcassets in Resources */,
+				00C3CE702B87DC4700981A02 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +194,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C3CE632B80F9AA00981A02 /* ContentView.swift in Sources */,
+				00C3CE7E2B88A1FB00981A02 /* DatePickerView.swift in Sources */,
+				00C3CE632B80F9AA00981A02 /* MainView.swift in Sources */,
 				00C3CE612B80F9AA00981A02 /* QuitDrinkApp.swift in Sources */,
+				00C3CE812B88A2E400981A02 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00C3CE722B87DC4700981A02 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C3CE712B87DC4700981A02 /* ru */,
+				00C3CE732B87DC4B00981A02 /* en */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		00C3CE7A2B87DD6100981A02 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C3CE792B87DD6100981A02 /* ru */,
+				00C3CE7B2B87DD6300981A02 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00C3CE692B80F9AB00981A02 /* Debug */ = {
@@ -270,11 +350,15 @@
 				DEVELOPMENT_TEAM = U8FZ3UYF69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StaySober;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +383,15 @@
 				DEVELOPMENT_TEAM = U8FZ3UYF69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StaySober;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

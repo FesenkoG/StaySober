@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  QuitDrink
+
+  Created by Georgii Fesenko on 22.02.2024.
+  
+*/
+
+
+"MainScreen.SoberStartDate.Title" = "Since";
+"MainScreen.Alert.Message" = "You've got a drink and want to start over?";
+"MainScreen.Alert.CancelAction" = "No, cancel";
+
+"DatePickerView.Title" = "When was your last drink?";
+"DatePickerView.Action" = "Set date";
+
+"Common.Reset" = "Reset";
+"Common.Yes" = "Yes";
